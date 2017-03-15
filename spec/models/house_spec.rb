@@ -9,4 +9,7 @@ RSpec.describe House, type: :model do
 
   it { is_expected.to have_many :people }
   it { is_expected.to have_many :cars }
+
+  it { is_expected.to accept_nested_attributes_for :people }
+  it { is_expected.to accept_nested_attributes_for :cars}
 end

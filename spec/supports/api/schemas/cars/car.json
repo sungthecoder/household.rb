@@ -3,8 +3,13 @@
   "properties": {
     "id":            { "type": "string" },
     "year":          { "type": "integer" },
-    "make_id":       { "type": "string" },
-    "make_display":  { "type": "string" },
+    "make":          {
+      "type": "object",
+      "properties": {
+        "make_id":       { "type": "string" },
+        "make_display":  { "type": "string" }
+      }
+    },
     "model":         { "type": "string" },
     "license_plate": { "type": "string" },
     "driver":        { "$ref": "../people/person.json" },
