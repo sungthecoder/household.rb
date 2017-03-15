@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :person do
-    first_name "MyString"
-    last_name "MyString"
-    email "MyString"
-    age 1
-    gender "MyString"
+    first_name "John"
+    last_name  "Doe"
+    email      { "#{first_name}.#{last_name}@email.com".downcase }
+    age        42
+    gender     "Other"
   end
 end
