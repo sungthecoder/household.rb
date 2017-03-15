@@ -98,6 +98,7 @@ GEM
       slop (~> 3.4)
     public_suffix (2.0.5)
     rack (1.5.5)
+    rack-cors (0.4.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.1.10)
@@ -189,6 +190,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   json-schema
+  rack-cors
   rails (= 4.1.10)
   rspec-rails (~> 3.5)
   sass-rails (~> 4.0.3)
