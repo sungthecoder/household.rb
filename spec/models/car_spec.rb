@@ -8,4 +8,6 @@ RSpec.describe Car, type: :model do
   it { is_expected.to respond_to :license_plate }
   it { is_expected.to belong_to  :house }
   it { is_expected.to belong_to  :driver }
+
+  it { is_expected.to respond_to :driver_id }
 end

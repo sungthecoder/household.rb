@@ -40,9 +40,10 @@ RSpec.describe "Households", type: :request do
           {
             first_name: "John",
             last_name:  "Doe",
-            emial:      "j.doe@email.com",
+            email:      "j.doe@email.com",
             age:        42,
-            gender:     "Other"
+            gender:     "Other",
+            driver_id:  1
           }
         ],
         cars_attributes: [
@@ -52,7 +53,7 @@ RSpec.describe "Households", type: :request do
             make_display:  "Maker",
             model:         "McQueen",
             license_plate: "CAR123",
-            driver_index:  0
+            driver_id:     1
           }
         ]
       }

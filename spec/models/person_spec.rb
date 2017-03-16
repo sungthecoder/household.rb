@@ -8,4 +8,6 @@ RSpec.describe Person, type: :model do
   it { is_expected.to respond_to :gender }
   it { is_expected.to belong_to  :house }
   it { is_expected.to have_many  :cars }
+
+  it { is_expected.to respond_to :driver_id }
 end
